@@ -85,7 +85,6 @@ self.addEventListener('fetch', event => {
           }
         ).catch(error => {
             console.error('Service Worker: Fallo en el fetch, el usuario está probablemente offline.', error);
-            // Opcional: Podrías devolver una página de fallback para el offline aquí.
         });
       })
   );
